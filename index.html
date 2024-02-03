@@ -3,33 +3,24 @@
   <head lang="en">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Game</h1>
-    <button
-      onclick=" playgame('rock');
- "
-    >
-      Rock
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <h3>You go First</h3>
+    <button class="player-btn" id="rock">
+      <img src="rock.jpg" alt="rock image" />
     </button>
-    <button
-      onclick="         
-     playgame('paper');
-
-    "
-    >
-      Paper
+    <button class="player-btn" id="paper">
+      <img src="paper.webp" alt="paper image" />
     </button>
-    <button
-      onclick=" playgame('scissors');
-    
-    "
-    >
-      Scissors
+    <button class="player-btn" id="scissors">
+      <img src="scissors.webp" alt="scissors image" />
     </button>
-
+    <div id="message-area"></div>
+    <button id="reset">ResetButton</button>
     <script src="script.js"></script>
   </body>
 </html>
