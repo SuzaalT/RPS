@@ -9,57 +9,22 @@
   <body>
     <h1>Game</h1>
     <button
-      onclick=" 
-          const computerMove = pickComputerMove(); 
-          // This will send the function to run below and after it returned and it is store in computerMove variable and work accordingly
-            
-            let result = '';
-            
-            if (computerMove === 'rock'){
-              result = 'tie';
-            } else if (computerMove === 'paper'){
-              result = 'Lose';
-            } else if (computerMove === 'scissors'){
-              result = 'Win';
-            }
-      alert (` You picked rock. Computer picked ${computerMove}.${result}`);
-          "
+      onclick=" playgame('rock');
+ "
     >
       Rock
     </button>
     <button
       onclick="         
-      pickComputerMove();
-      let result = '';
-      
-      if (computerMove === 'rock'){
-        result = 'Win';
-      } else if (computerMove === 'paper'){
-        result = 'Tie';
-      } else if (computerMove === 'scissors'){
-        result = 'Lose';
-      }
-alert (` You picked Paper. Computer picked ${computerMove}.${result}`);
+     playgame('paper');
 
     "
     >
       Paper
     </button>
     <button
-      onclick=" 
-      pickComputerMove;
-
-let result = '';
-
-if (computerMove === 'rock') {
-  result = 'You lose.';
-} else if (computerMove === 'paper') {
-  result = 'You win.';
-} else if (computerMove === 'scissors') {
-  result = 'Tie.';
-}
-
-alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+      onclick=" playgame('Scissors');
+    
     "
     >
       Scissors
